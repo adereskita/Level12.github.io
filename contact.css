@@ -1,0 +1,206 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #F94444;
+	margin: 0;
+	padding-right: 0;
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+*{
+	    box-sizing: border-box;
+}
+
+/*fonts*/
+@font-face{
+	font-family: 'Fjalla One';
+	src: url("./font/FjallaOne-Regular.ttf") format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/*Scroll behaviour*/
+
+.scroll-container {  
+  position: fixed;  
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: center;  
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+
+
+div.sidenav {
+	opacity: 0%;
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: grid;
+    padding: 4vw;
+    grid-auto-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    overflow-x: hidden;
+
+    /*
+	background-color: #F94444;
+	
+	padding-top: 20px;
+	padding: 43px 43px;*/
+}
+
+div.sidenav a {
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 400;
+	
+	margin-left: 100px;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	opacity: 0%;
+	text-decoration: none;;
+	color: #FEFEFE;
+	display: inline-block;
+	z-index: 2;
+
+	/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+}
+
+div.sidenav a:hover {
+	color: #EFEFEF;
+}
+
+#back-a{
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+}
+
+
+#back{
+	width: 50px;
+	height: 50px;
+	border:1px solid #bbb;
+	border-radius: 50%;
+	padding: 12px 12px;
+
+	/* Safari */
+	-webkit-transform: rotate(90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+
+	/* IE */
+	-ms-transform: rotate(90deg);
+
+	/* Opera */
+	-o-transform: rotate(90deg);
+}
+
+#back:hover{
+	border-color: #212121;
+	content:url("./button/back-black.svg");
+}
+
+
+
+
+.container-grid{
+	/*display: grid | inline-grid;*/
+	z-index: 1;
+	display:grid;
+	grid-auto-columns: 1fr;
+    grid-template-columns: 4vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4vw;
+    grid-template-rows: auto auto, auto;
+    padding: 4em 1em;
+	 height: 100vh; /* new */
+	 height: 100%;
+}
+
+
+.container{
+	grid-column-start: 5;
+	grid-column-end: 8;
+	height: 100%;
+	display: grid | inline-grid;
+}
+
+
+div.lets-grid{
+		grid-column-start: 5;
+		grid-column-end: 5;
+}
+
+
+h1#lets{
+	/*display: block;*/
+	margin:10px;
+    display: block;
+    font-weight: bold;
+	/*margin-left: 420px;*/
+	font-family: 'Fjalla One', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-top: 65px;
+	font-size: 62pt;
+	color: #FEFEFE;
+	line-height: 1em;
+	margin-bottom: 200px;
+}
+
+
+
+div#email {
+	margin-bottom: 150px;
+	display: inline-table;
+	grid-column-start: 7;
+	grid-column-end: 9;
+	grid-row-start: 2;
+}
+
+div#email a{
+	font-size: 14pt;
+	text-decoration:none;
+	color: #FEFEFE;
+}
+
+div#email a:hover{
+	color: #212121;
+}
+
+
+div#message{
+	margin-bottom: 150px;
+	grid-column-start: 7;
+	grid-column-end: 9;
+	grid-row-start: 3;
+	color: #FEFEFE;
+}
+
+
+/*<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">*/
